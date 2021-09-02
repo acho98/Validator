@@ -22,8 +22,8 @@ def process(project, datadir, dbname, collection_name, log_path):
     files = []
     work_time = strftime("%Y%m%d%H%M%S", localtime())
     # mongodb client
-    client = MongoClient('localhost', 27017)
-    # client = MongoClient('mongodb://admin:mongo@localhost:27011')
+    # client = MongoClient('localhost', 27017)
+    client = MongoClient('mongodb://admin:mongo@localhost:27011')
     db_name = dbname
     collection_name = collection_name
     db = client[db_name]
